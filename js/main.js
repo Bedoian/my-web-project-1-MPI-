@@ -18,7 +18,6 @@ for (let seatClass of seatClasses) {
 
         //condition
         let length = document.getElementById('added').childNodes.length;
-        console.log(length)
         if (length ===2) {
             let value = 550
             setInnertextValue('aTotal', value)
@@ -61,14 +60,44 @@ function oncilik() {
     setClassListByIdHide('success')
     setClassListByIdShow('main')
 }
+// warning-1
+function clickhere(){
+    setClassListByIdHide('warning')
+    setClassListByIdShow('main')
+}
+// warning-2
+function click(){
+    setClassListByIdHide('Alert')
+    setClassListByIdShow('main')
+}
 // btn disbled section
 
 document.getElementById('apply').addEventListener('click',function(){
     const value=document.getElementById('copon').value
     if(value=='NEW15'){
         setInnertextValue('gTotal',1870)
+        document.getElementById('input-copon').classList.add('hidden')
     }
     else if(value=='Couple20'){
         setInnertextValue('gTotal',1760)
+        document.getElementById('input-copon').classList.add('hidden')
+    }
+    else{
+        document.getElementById('main').classList.add('hidden')
+        document.getElementById('Alert').classList.remove('hidden')
     }
 })
+
+// btn
+
+
+
+document.getElementById('number').addEventListener('keyup',function(){
+    let height = document.getElementById('added').childNodes.length;
+    const value=document.getElementById('number').value
+    if(value>0 && height>0){
+       document.getElementById('next').removeAttribute('disabled')
+    //    document.getElementById('next').classList.add('hidden')
+    }
+})
+    

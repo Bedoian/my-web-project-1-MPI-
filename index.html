@@ -374,7 +374,7 @@
                                 </div>
                                 <hr>
                                 <div id="added" class="">
-                                
+
                                 </div>
                                 <div id="demo1" class="text-xl text-gray-500  flex justify-around pt-5">
                                     <h1>C2</h1>
@@ -392,10 +392,11 @@
                                     <h1>BDT <span id="aTotal">1100</span></h1>
                                 </div>
                                 <!-- copon input  -->
-                                <div class="flex pt-6">
-                                    <input id="copon" class="h-[56px] p-4 w-[350px] rounded-lg " placeholder="Have You any copon?"
-                                        type="text">
-                                    <button id="apply" disabled="disabled" class="btn bg-[#1DD100] text-white h-[56px] ">Apply</button>
+                                <div id="input-copon" class="flex pt-6">
+                                    <input id="copon" class="h-[56px] p-4 w-[350px] rounded-lg "
+                                        placeholder="Have You any copon?" type="text">
+                                    <button id="apply" disabled="disabled"
+                                        class="btn bg-[#1DD100] text-white h-[56px] ">Apply</button>
                                 </div>
                                 <div class="text-xl text-black font-medium flex justify-between pt-6 px-6">
                                     <h1>Grand Total</h1>
@@ -407,14 +408,15 @@
                                     <input class="w-[423px] h-[60px] px-6 border-2 border-gray-300 rounded-lg pb-3"
                                         type="text" placeholder="Enter Your Name">
                                     <h1 class="text-black text-2xl font-semibold pb-3">Phone Number*</h1>
-                                    <input id="number" class="w-[423px] h-[60px] px-6  border-2 border-gray-300 rounded-lg"
+                                    <input id="number"
+                                        class="w-[423px] h-[60px] px-6  border-2 border-gray-300 rounded-lg"
                                         type="number" placeholder="Enter Your Phone Number">
                                     <h1 id="h1" class="text-black text-2xl font-semibold py-3">Email ID*</h1>
                                     <input class="w-[423px] h-[60px] px-6 border-2 border-gray-300 rounded-lg"
                                         type="email" placeholder="Enter your Email Id">
                                     <div class="pt-3 ">
-                                        <button onclick="clickHere()" disabled="disabled"
-                                           id="next" class="btn w-[423px] h-[60px] disabled bg-[#1DD100] text-2xl text-white ">Next</button>
+                                        <button onclick="clickHere()" disabled="disabled" id="next"
+                                            class="btn w-[423px] h-[60px] disabled bg-[#1DD100] text-2xl text-white ">Next</button>
                                     </div>
                                 </div>
                                 <!-- Teams & Conditions -->
@@ -426,84 +428,101 @@
                         </div>
                 </div>
             </section>
+            <footer class=" p-10 bg-black text-base-content hidden">
+                <nav class="flex justify-between  text-white">
+                    <nav class="">
+                        <h6 class="text-3xl font-bold">P-Ticket</h6>
+                        <a class="link link-hover">P-Ticket is a digital platform to make your daily <br>commuting
+                            better.</a>
+                    </nav>
+                    <nav>
+                        <h6 class="text-xl text-white pb-3 raleway">Download Our App</h6>
+                        <div class="flex border-2 border-white p-3 rounded-lg mb-6">
+                            <img src="images/playstore.png" alt="">
+                            <div class="text-sm">
+                                GET IT ON <br>
+                                <span class="text-xl">Google Playstore</span>
+                            </div>
+                        </div>
+                    </nav>
+                </nav>
+                <hr>
+                <div class="text-white flex justify-between mt-5 mb-20">
+                    <div>
+                        <h1 class="text-sm text-gray-300">@all rights reserved, P-Ticket services limited.2024</h1>
+                    </div>
+                    <div class="grid grid-cols-3 gap-6">
+                        <h1>Terms & condition</h1>
+                        <h1>Return & refund policy</h1>
+                        <h1>Privacy policy</h1>
+                    </div>
+                </div>
+            </footer>
     </section>
     </section>
-    <!-- Success section -->
-<div>
-    <section  id="success" class="flex justify-center hidden mt-52 ">
-        <div class="w-[700px] h-[400px] bg-white border-2 border-green-500 rounded-xl ">
-            <div class="flex justify-center pt-10">
-                <img src="images/success.png" alt="">
-            </div>
-            <h1 class="text-center text-3xl font-bold text-green-500">Success</h1>
-            <h2 class="text-center text-xl pb-2 font-semibold">Thank you for Booking Our Bus Seats.</h2>
-            <h2 class="text-center text-xl pb-2 font-semibold">We are working hard to find the best service and deals
-                for you.</h2>
-            <h2 class="text-center text-[16px] font-semibold text-gray-400"> Shortly you will find a confirmation in
-                your email.</h2>
-            <div class="flex justify-center">
-                <button onclick="oncilik()"
-                    class="btn mt-4  bg-green-500 rounded-full text-white text-xl h-[60px] w-[300px] ">Continue</button>
-            </div>
-        </div>
-    </section>
-</div>
-<div>
-    <section  id="warning" class="hidden flex justify-center  mt-52 ">
-        <div class="w-[700px] h-[400px] bg-white border-2 border-green-500 rounded-xl ">
-            <div class="flex justify-center pt-10">
-                <img src="images/warning-100.png" alt="">
-            </div>
-            <h1 class="text-center text-3xl font-bold text-red-600">warning</h1>
-            <h2 class="text-center text-xl pb-2 font-semibold">You Can select only 4 sets for a certain account</h2>
-            <h2 class="text-center text-xl pb-2 font-semibold">Remember if you select 4 we gonna show you this warning
-                for you.</h2>
-            <h2 class="text-center text-[16px] font-semibold text-gray-400">Have a great journey for you.</h2>
-            <div class="flex justify-center">
-                <button onclick="oncilik()"
-                    class="btn mt-4  bg-red-600 rounded-full text-white text-xl h-[60px] w-[300px] ">Continue</button>
-            </div>
-        </div>
-    </section>
-</div>
-    </div>
-
-
     </section>
     </main>
-    <footer>
-        <footer class=" p-10 bg-black text-base-content hidden">
-        <nav class="flex justify-between  text-white">
-            <nav class="">
-                <h6 class="text-3xl font-bold">P-Ticket</h6> 
-                <a class="link link-hover">P-Ticket is a digital platform to make your daily <br>commuting better.</a>
-              </nav> 
-              <nav>
-                <h6 class="text-xl text-white pb-3 raleway">Download Our App</h6> 
-              <div class="flex border-2 border-white p-3 rounded-lg mb-6">
-                <img src="images/playstore.png" alt="">
-                <div class="text-sm">
-                    GET IT ON <br>
-                    <span class="text-xl">Google Playstore</span>
+    <!-- Success section -->
+    <div>
+        <section id="success" class="flex justify-center hidden mt-52 ">
+            <div class="w-[700px] h-[400px] bg-white border-2 border-green-500 rounded-xl ">
+                <div class="flex justify-center pt-10">
+                    <img src="images/success.png" alt="">
                 </div>
-              </div>
-              </nav>
-        </nav>
-        <hr>
-        <div class="text-white flex justify-between mt-5 mb-20">
-            <div><h1 class="text-sm text-gray-300">@all rights reserved, P-Ticket services limited.2024</h1></div>
-            <div class="grid grid-cols-3 gap-6">
-                <h1>Terms & condition</h1>
-                <h1>Return & refund policy</h1>
-                <h1>Privacy policy</h1>
+                <h1 class="text-center text-3xl font-bold text-green-500">Success</h1>
+                <h2 class="text-center text-xl pb-2 font-semibold">Thank you for Booking Our Bus Seats.</h2>
+                <h2 class="text-center text-xl pb-2 font-semibold">We are working hard to find the best service and
+                    deals
+                    for you.</h2>
+                <h2 class="text-center text-[16px] font-semibold text-gray-400"> Shortly you will find a confirmation in
+                    your email.</h2>
+                <div class="flex justify-center">
+                    <button onclick="oncilik()"
+                        class="btn mt-4  bg-green-500 rounded-full text-white text-xl h-[60px] w-[300px] ">Continue</button>
+                </div>
             </div>
-        </div>
-    </footer>
-    <script>
-
-
-
-    </script>
+        </section>
+    </div>
+    <!-- warning1 -->
+    <div>
+        <section id="warning" class="hidden flex justify-center  mt-52 ">
+            <div class="w-[700px] h-[400px] bg-white border-2 border-green-500 rounded-xl ">
+                <div class="flex justify-center pt-10">
+                    <img src="images/warning-100.png" alt="">
+                </div>
+                <h1 class="text-center text-3xl font-bold text-red-600">warning</h1>
+                <h2 class="text-center text-xl pb-2 font-semibold">You Can select only 4 sets for a certain account</h2>
+                <h2 class="text-center text-xl pb-2 font-semibold">Remember if you select 4 we gonna show you this
+                    warning
+                    for you.</h2>
+                <h2 class="text-center text-[16px] font-semibold text-gray-400">Have a great journey for you.</h2>
+                <div class="flex justify-center">
+                    <button onclick="clickhere()"
+                        class="btn mt-4  bg-red-600 rounded-full text-white text-xl h-[60px] w-[300px] ">Continue</button>
+                </div>
+            </div>
+        </section>
+    </div>
+    <!-- Warning-2 -->
+    <div>
+        <section id="Alert" class=" hidden flex justify-center  mt-52 ">
+            <div class="w-[700px] h-[400px] bg-white border-2 border-green-500 rounded-xl ">
+                <div class="flex justify-center pt-10">
+                    <img src="images/warning-1.png" alt="">
+                </div>
+                <h1 class="text-center text-3xl font-bold text-red-600">Alert</h1>
+                <h2 class="text-center text-xl pb-2 font-semibold">Your copon code is invalid</h2>
+                <h2 class="text-center text-xl pb-2 font-semibold">The code you have enterd is invalid.put the valid
+                    code if you have</h2>
+                <h2 class="text-center text-[16px] font-semibold text-gray-400">Besi paknami koris nh</h2>
+                <div class="flex justify-center">
+                    <button onclick="click()"
+                        class="btn mt-4  bg-red-600 rounded-full text-white text-xl h-[60px] w-[300px] ">Continue</button>
+                </div>
+            </div>
+        </section>
+    </div>
+    </div>
     <script src="js/main.js"></script>
     <script src="js/utility.js"></script>
 </body>
