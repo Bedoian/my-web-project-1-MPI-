@@ -4,7 +4,7 @@ let count = 0;
 let count2 = 40;
 for (let seatClass of seatClasses) {
     seatClass.addEventListener('click', function (e) {
-        seatClass.classList.add('bg-green-500', 'text-white')
+        seatClass.classList.add('bg-green-400', 'text-white')
         // hide
         setClassListByIdHide('demo1')
         setClassListByIdHide('demo2')
@@ -14,31 +14,31 @@ for (let seatClass of seatClasses) {
         const seatType = 'Economy'
         // append child
         append(seatName, seatPrice, seatType)
-        
+
 
         //condition
         let length = document.getElementById('added').childNodes.length;
-        if (length ===2) {
+        if (length === 2) {
             let value = 550
             setInnertextValue('aTotal', value)
-            setInnertextValue('gTotal',value )
+            setInnertextValue('gTotal', value)
         }
-        else if (length ===3) {
+        else if (length === 3) {
             setInnertextValue('aTotal', 550 * 2)
             setInnertextValue('gTotal', 550 * 2)
         }
-        else if (length ===4) {
+        else if (length === 4) {
             setInnertextValue('aTotal', 550 * 3)
             setInnertextValue('gTotal', 550 * 3)
         }
-        else if (length ===5) {
+        else if (length === 5) {
             setInnertextValue('aTotal', 550 * 4)
             setInnertextValue('gTotal', 0)
             document.getElementById('apply').removeAttribute('disabled')
             document.getElementById('main').classList.add('hidden')
             document.getElementById('warning').classList.remove('hidden')
         }
-       
+
         // change Selected seat value
         count = count + 1
         setInnertextValue('Selected-Seat', count)
@@ -61,28 +61,36 @@ function oncilik() {
     setClassListByIdShow('main')
 }
 // warning-1
-function clickhere(){
+function clickhere() {
     setClassListByIdHide('warning')
     setClassListByIdShow('main')
 }
 // warning-2
-function click(){
+function Hiclick() {
     setClassListByIdHide('Alert')
     setClassListByIdShow('main')
 }
 // btn disbled section
 
-document.getElementById('apply').addEventListener('click',function(){
-    const value=document.getElementById('copon').value
-    if(value=='NEW15'){
-        setInnertextValue('gTotal',1870)
+document.getElementById('apply').addEventListener('click', function () {
+    const value = document.getElementById('copon').value
+    if (value == 'NEW25') {
+        setInnertextValue('gTotal', 1650)
         document.getElementById('input-copon').classList.add('hidden')
     }
-    else if(value=='Couple20'){
-        setInnertextValue('gTotal',1760)
+    else if (value == 'akma27') {
+        setInnertextValue('gTotal', 1606)
         document.getElementById('input-copon').classList.add('hidden')
     }
-    else{
+    else if (value == 'solo17') {
+        setInnertextValue('gTotal', 1826)
+        document.getElementById('input-copon').classList.add('hidden')
+    }
+    else if (value == 'squad31') {
+        setInnertextValue('gTotal', 1607)
+        document.getElementById('input-copon').classList.add('hidden')
+    }
+    else {
         document.getElementById('main').classList.add('hidden')
         document.getElementById('Alert').classList.remove('hidden')
     }
@@ -90,14 +98,18 @@ document.getElementById('apply').addEventListener('click',function(){
 
 // btn
 
-
-
-document.getElementById('number').addEventListener('keyup',function(){
+document.getElementById('number').addEventListener('keyup', function () {
     let height = document.getElementById('added').childNodes.length;
-    const value=document.getElementById('number').value
-    if(value>0 && height>0){
-       document.getElementById('next').removeAttribute('disabled')
-    //    document.getElementById('next').classList.add('hidden')
+    const value = document.getElementById('number').value
+    if (value > 0 && height > 0) {
+        document.getElementById('next').removeAttribute('disabled')
+        //    document.getElementById('next').classList.add('hidden')
     }
 })
-    
+// btn scrolling select-seat-section
+
+document.getElementById('scroll-btn').addEventListener("click", function () {
+    document.getElementById('select-seat-section').scrollIntoView({
+        behavior: "smooth"
+    })
+})

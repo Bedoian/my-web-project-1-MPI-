@@ -50,7 +50,7 @@ function append(seatName,seatPrice,seatType){
     const p = document.createElement('h1')
     p.innerText = seatPrice;
     div.appendChild(p)
-    div.classList.add('flex','justify-around','text-2xl','text-gray-500')
+    div.classList.add('flex','justify-around','text-xl','text-gray-500')
     container.appendChild(div)
 }
 
