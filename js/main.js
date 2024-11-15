@@ -4,7 +4,7 @@ let count = 0;
 let count2 = 40;
 for (let seatClass of seatClasses) {
     seatClass.addEventListener('click', function (e) {
-        seatClass.classList.add('bg-green-400', 'text-white')
+        seatClass.classList.add('text-white','bg-purple-500')
         // hide
         setClassListByIdHide('demo1')
         setClassListByIdHide('demo2')
